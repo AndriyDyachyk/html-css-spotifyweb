@@ -3,3 +3,32 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* main containers style */
+#sidebar{
+    width: 230px;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 90px;
+}
+
+#bottom_bar{
+    height: 90px;
+    background-color: rgb(40, 40, 40) ;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+main{
+    width: calc(100vw - 230px);
+    background-color: rgb(20, 25, 34);
+    height: calc(100vh - 90px);
+    position: absolute;
+    top: 0px;
+    left: 230px;
+}

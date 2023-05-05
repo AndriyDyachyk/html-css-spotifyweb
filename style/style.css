@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow: hidden;
+}
+
 /* main containers style */
 #sidebar{
     width: 230px;
@@ -12,6 +16,8 @@
     top: 0px;
     left: 0px;
     bottom: 90px;
+    color: rgb(163, 163 , 163);
+    padding: 15px;
 }
 
 #bottom_bar{
@@ -32,3 +38,80 @@ main{
     top: 0px;
     left: 230px;
 }
+
+/* common */
+
+.row{
+    display: flex;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+/* sidebar style*/
+#logo, #side_menu, #profile{
+    height: 60px;
+}
+
+#logo img{
+    height: 50px;
+}
+
+#side_menu{
+    height: 100px;
+}
+
+#playlist{
+    overflow-y:auto;
+    height: calc(100% - 235px)
+}
+
+/* bottom_bar layout*/
+
+.col_230{
+    width: 230px;
+    background-color: red;
+    height: 90px;
+}
+
+.col{
+    width: 30%;
+    background-color: blue;
+    height: 90px;
+}
+
+.col_145{
+    width: 145px;
+    height: 90px;
+    background-color: yellow;
+}
+
+.col_icons{
+    width: 70px;
+    height: 90px;
+    background-color: green;
+}
+
+.col_media{
+    width: 230px;
+    height: 45px;
+    background-color: white;
+
+}
+
+.col_time{
+    width: 30px;
+    height: 45px;
+    background-color: black;
+}
+
+.col_timeline{
+    width: calc(100% - 60px);
+}
+
+/* bottom_bar content */
